@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Hello, world, Practica 7</title>
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Cursos UTEZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instructores</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cursos Modalidad
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Presencial</a>
+                <a class="dropdown-item" href="#">Remoto</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Mixto</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<div class="container"> 
+        <!--
+            table striped >colorea un rengulon si y uno no
+            table-hover >ilumina el rengulon activo
+            table-bordered > crea todo los bordes de la tabla
+            table-borderleess > remuebe los bordes de toda la tabla
+            table-sm >
+            table-responsive-sm
+            table-responsive-md
+            table-responsive-lg
+            table-responsive-xl
+        --> 
+    <div class="table-responsive-sm">
+      <table class="table table-dark table-striped table-hover table-bordered">
+          <thead class="thead-dark">
+              <tr>
+                  <th>No.</th>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>Modalidad</th>
+                  <th>Instructor</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="bg-primary">
+                  <td>1</td>
+                  <td>Bootstrap Básico</td>
+                  <td>Taller</td>
+                  <td>Remoto</td>
+                  <td>I.T.I José Chistian Narvaéz Figeroa</td>
+                  <td>
+                    <button class="btn btn-success">
+                        modificar
+                    </button>
+                    <button class="btn btn-danger">
+                        Eliminar
+                    </button>
+                  </td>
+              </tr>
+              <tr class="bg-danger">
+                <td>2</td>
+                <td>JavaScript Básico</td>
+                <td>Taller</td>
+                <td>Presencial</td>
+                <td>I.T.I José Reynel Flores Brito</td>
+                <td>
+                    <a class="btn btn-success" href="#">Modificar</a>
+                    <a class="btn btn-warning" href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr class="bg-warning">
+                <td>3</td>
+                <td>HTML Básico</td>
+                <td>Curso</td>
+                <td>Presencial</td>
+                <td>I.T.I Reynel figeroa Brito</td>
+                <td>
+                    <input type="button" class="btn btn-info"
+                    value="Modificar"/>
+                    <input type="button" class="btn btn-secondary"
+                    value="Eliminar"/>
+                </td>
+            </tr>
+            <tr class="table-warning">
+                <td>4</td>
+                <td>JavaEE Básico</td>
+                <td>Curso</td>
+                <td class="bg-success">Mixto</td>
+                <td>I.T.I José Chistian Narvaéz Figeroa</td>
+                <td>
+                    <button class="btn btn-outline-primary">
+                        Modificar
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr class="bg-info">
+                <td>4</td>
+                <td>JavaEE Básico</td>
+                <td>Curso</td>
+                <td>Mixto</td>
+                <td>I.T.I José Chistian Narvaéz Figeroa</td>
+                <td>
+                <button class="btn btn-outline-primary btn-lg">
+                    Modificar
+                </button>
+                <button class="btn btn-outline-danger btn-sm">
+                    Modificar
+                </button>
+            </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bootstrap Básico</td>
+                <td>Taller</td>
+                <td>Remoto</td>
+                <td>I.T.I José Chistian Narvaéz Figeroa</td>
+                <td>
+                  <button class="btn btn-primary btn-block">
+                      modificar
+                  </button>
+                  <button class="btn btn-outline-danger btn-block">
+                      Eliminar
+                  </button>
+                </td>
+          </tbody>
+      </table>
+   </div>
+
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
